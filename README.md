@@ -88,7 +88,7 @@ pca_model = PCA(n_components=500, copy=True)
 pca_features = pca_model.fit_transform(smoothed_data_array[:, :-1])
 ```
 
-<img src=".\figures\PCA.png" width=90%>
+<img src=".\figures\PCA.png" width=100%>
 
 ### 5. Classifier Training
 
@@ -113,7 +113,7 @@ We construct a 1D convolution neural network in this project. For the convolutio
 
 To address the issue of overfitting, we experimented with both dropout and batch normalization. We observed that the performance on the validation set was highly sensitive to the dropout rate. To reduce this complexity, we switch to batch normalization. Besides, there are 3 fully connected dense layers with 128, 64, 32 units respectively.  
 
-<img src=".\figures\CNN_Model_1D.png" width=40%>
+<img src=".\figures\CNN_Model_1D.png" width=50%>
 
 ```bash
 Epoch 1/20
@@ -135,7 +135,7 @@ The training of our CNN model takes about 20s per batch with 16 CPUs. The perfor
 | **Accuracy Score** | 0.964         | 0.979 | 0.983 |
 | **F1 Score**       | 0.936         | 0.957 | 0.971 |
 
-<img src=".\figures\confusion_matrices.png" width=90%>
+<img src=".\figures\confusion_matrices.png" width=100%>
 
 ## Quick Start
 

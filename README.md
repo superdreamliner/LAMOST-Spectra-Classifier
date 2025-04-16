@@ -1,6 +1,6 @@
 # Machine Learning Classification of 1D Spectra in Astronomy
 
-## Introduction and Motivation
+## Introduction & Motivation
 
 Spectroscopy is one of the cornerstones of modern astrophysical research. In recent decade, large-scale spectroscopic surveys have produced extensive datasets, and revolutionized our understanding of the Milky Way and the Universe. The first step to analysis these spectra is usually to classify them into three major groups: galaxies, quasars, or stars.
 
@@ -166,7 +166,7 @@ python spectra_preview.py
 python spectra_classify.py
 ```
 
-## Reference
+## References
 
 [1] Bu, Y., Zeng, J., Lei, Z., & Yi, Z. (2019). Searching for Hot Subdwarf Stars from the LAMOST Spectra. III. Classification of Hot Subdwarf Stars in the Fourth Data Release of LAMOST Using a Deep Learning Method. *The Astrophysical Journal*, *886*(2), 128. 
 

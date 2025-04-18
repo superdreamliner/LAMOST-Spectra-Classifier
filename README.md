@@ -76,7 +76,7 @@ simulated_data_quasar = spectra_simulation(normalized_data_array, catagary_to_si
 
 ### 3. Features Extraction
 
-Spectral features and basic statistical features are extracted from spectra. The extracted features are combined with PCA results (refer to next subsection), and then utilized to train models. For spectral features, we calculate the mean flux around some important absorption lines, including H-alpha, H-beta, H-gamma, H-delta, Mg, and Na. For statistical features, we divide the spectra into several blocks, and calculate the mean, variance, maximum, and minimum for each block. 
+Spectral features and basic statistical features are extracted from spectra. The extracted features are combined with PCA results (refer to next subsection), and then utilized to train models. For spectral features, we calculate the mean flux around some important absorption lines, including Hα, Hβ, Hγ, Hδ, Mg, and Na. For statistical features, we divide the spectra into several blocks, and calculate the mean, variance, maximum, and minimum for each block. 
 
 ```python
 line_list = [6562.81, 4861.34, 4340.47, 4101.75, 5183.62, 5889.95]

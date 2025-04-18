@@ -70,6 +70,9 @@ In the training dataset, the distribution of the three classes is highly imbalan
 simulated_data_galaxy = spectra_simulation(normalized_data_array, catagary_to_sim=0, number_to_sim=200)
 simulated_data_quasar = spectra_simulation(normalized_data_array, catagary_to_sim=1, number_to_sim=200)
 ```
+<div align=center>
+<img src=".\figures\spectra_simulated2.png" width=55%>
+</div>
 
 ### 3. Features Extraction
 
@@ -106,7 +109,7 @@ svm_model = SVC(kernel='rbf', class_weight='balanced', random_state=30, verbose=
 
 # CNN
 model = CNN_Model_1D(input_shape=x_train.shape[1], output_shape=3, conv_branch_num=3,
-                     conv_kernel_size=[3, 5, 7, 9, 11, 13, 15, 17], node_num=[128, 64, 32])
+                     conv_kernel_size=[3, 7, 9, 13, 17], node_num=[128, 64, 32])
 model.compile(loss = losses.SparseCategoricalCrossentropy(from_logits=False), 
               optimizer = optimizers.Adam(learning_rate=0.0005), metrics =['accuracy'])
 model.fit(x_train, y_train, batch_size=128, epochs=50, verbose=1)

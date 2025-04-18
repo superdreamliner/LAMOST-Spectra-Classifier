@@ -36,7 +36,7 @@ Example spectra of each type are shown below. Only one FITS file is used in the 
 ## Repository Structure
 
 ```
-Lamost-Spectra-Classifier/
+LAMOST-Spectra-Classifier/
 │
 ├── utils/
 |   ├── __init__.py
